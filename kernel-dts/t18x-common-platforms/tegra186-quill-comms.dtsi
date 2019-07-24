@@ -71,6 +71,7 @@
 		wlan-pwr-gpio = <&tegra_main_gpio TEGRA_MAIN_GPIO(N, 0) 0>;
 		fw_path = "/vendor/firmware/fw_bcmdhd_4354.bin";
 		nv_path = "/vendor/firmware/nvram_quill_4354.txt";
+		clm_blob_path = "/vendor/firmware/bcmdhd_clm_4354.blob";
 		sdhci-host = <&sdmmc3>;
 		pwr-retry-cnt = <5>;
 		status = "okay";
