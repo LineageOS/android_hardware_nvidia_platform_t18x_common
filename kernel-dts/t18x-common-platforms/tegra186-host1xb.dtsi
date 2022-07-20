@@ -15,7 +15,7 @@
 
 / {
 
-	host1x {
+	host1x@13e00000 {
 		isp@15600000 {
 			status = "disabled";
 		};

@@ -14,7 +14,7 @@
  */
 
 / {
-	host1x {
+	host1x@13e00000 {
 		nvidia,ch-base = <0>;
 		nvidia,nb-channels = <60>;
 
