@@ -272,10 +272,12 @@
 		fragment-e3320-dp {
 			ids = ">=3320-1000-000", ">=3320-1100-000";
 			override@0 {
-				target = <&{/host1x}>;
+				target = <&{/host1x@13e00000}>;
 				_overlay_ {
-					nvdisplay@15220000 {
-						status = "okay";
+					display-hub@15200000 {
+						display@15220000 {
+							status = "okay";
+						};
 					};
 					sor {
 						status = "okay";

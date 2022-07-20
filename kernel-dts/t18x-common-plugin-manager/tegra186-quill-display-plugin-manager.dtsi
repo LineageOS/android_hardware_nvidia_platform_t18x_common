@@ -30,10 +30,12 @@
 				};
 			};
 			overrides@2 {
-				target = <&{/host1x}>;
+				target = <&{/host1x@13e00000}>;
 				_overlay_ {
-					nvdisplay@15200000 {
-						status = "okay";
+					display-hub@15200000 {
+						display@15200000 {
+							status = "okay";
+						};
 					};
 					dsi {
 						status = "okay";
@@ -81,10 +83,12 @@
 				};
 			};
 			overrides@3 {
-				target = <&{/host1x}>;
+				target = <&{/host1x@13e00000}>;
 				_overlay_ {
-					nvdisplay@15200000 {
-						status = "okay";
+					display-hub@15200000 {
+						display@15200000 {
+							status = "okay";
+						};
 					};
 					dsi {
 						status = "okay";
@@ -126,24 +130,26 @@
 				};
 			};
 			overrides@2 {
-				target = <&{/host1x/dsi/panel-s-wuxga-8-0}>;
+				target = <&{/host1x@13e00000/dsi/panel-s-wuxga-8-0}>;
 				_overlay_ {
 					status = "disabled";
 				};
 			};
 
 			overrides@3 {
-				target = <&{/host1x/dsi/panel-s-wqxga-10-1}>;
+				target = <&{/host1x@13e00000/dsi/panel-s-wqxga-10-1}>;
 				_overlay_ {
 					status = "okay";
 				};
 			};
 
 			overrides@4 {
-				target = <&{/host1x}>;
+				target = <&{/host1x@13e00000}>;
 				_overlay_ {
-					nvdisplay@15200000 {
-						status = "okay";
+					display-hub@15200000 {
+						display@15200000 {
+							status = "okay";
+						};
 					};
 
 					dsi {
@@ -156,10 +162,12 @@
 		fragment-e1824-a00@3 {
 			ids = "1824-1100-001";
 			overrides@0 {
-				target = <&{/host1x}>;
+				target = <&{/host1x@13e00000}>;
 				_overlay_ {
-					nvdisplay@15200000 {
-						status = "okay";
+					display-hub@15200000 {
+						display@15200000 {
+							status = "okay";
+						};
 					};
 					sor {
 						status = "okay";

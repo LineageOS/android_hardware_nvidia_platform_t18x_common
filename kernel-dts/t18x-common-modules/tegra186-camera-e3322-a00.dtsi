@@ -17,7 +17,7 @@
 
 /* camera control gpio definitions */
 / {
-	host1x {
+	host1x@13e00000 {
 		vi@15700000 {
 			num-channels = <6>;
 			ports {
