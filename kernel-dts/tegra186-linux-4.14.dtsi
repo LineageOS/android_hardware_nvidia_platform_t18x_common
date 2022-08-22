@@ -14,13 +14,6 @@
  */
 
 / {
-	/* Change hardware identifier for k4.14 ap_sanity test */
-	firmware {
-		android {
-			hardware = "quill-k414";
-		};
-	};
-
 	chosen {
 		 bootargs ="console=ttyS0,115200 androidboot.presilicon=true firmware_class.path=/etc/firmware";
 	};
