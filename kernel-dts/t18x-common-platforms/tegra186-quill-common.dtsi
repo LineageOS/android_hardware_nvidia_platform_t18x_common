@@ -637,6 +637,7 @@
 	aconnect@2a41000 {
 #endif
 	adsp_audio {
+		status = "disabled";
 		compr-ops = <1>;
 		num-plugin = <5>;
 		plugin-info-1 {
