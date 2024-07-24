@@ -830,3 +830,8 @@
 };
 
 hdr40_snd_link_i2s: &i2s1_to_codec { };
+
+&i2s6_to_codec {
+	format = "dsp_a";
+	bitclock-inversion;
+};
